@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -12,7 +12,7 @@
 
     <!-- Crida a fulles d'estil -->
     {% block archivos_css %}{% endblock %}
-     <link rel="stylesheet" href="{% static AECOnews/static/css/generales.css%}">
+     <link rel="stylesheet" href="{% static /css/generales.css %}">
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet"> <!-- Fuentes google fonts -->
