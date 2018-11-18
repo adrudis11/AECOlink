@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -10,19 +11,37 @@
     <meta name="keywords" content="HTML5, CSS, JavaScript">
 
     <!-- Crida a fulles d'estil -->
-    <link rel="stylesheet" href="/HojasCSS/misestilosgenerales.css">
+    {% block archivos_css %}{% endblock %}
+     <link rel="stylesheet" href="{% static AECOnews/static/css/generales.css%}">
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet"> <!-- Fuentes google fonts -->
   </head>
 
   <body>
-    <header><h1 id="tituloprincipal"><a id="navegacion" href="index.html">AECOlink</a></h1> <h2> Inicio </h2></header>
-    {% block navegador %}{% endblock %}
+    <header><h1 id="tituloprincipal"><a id="navegacion" href="index.html">AECOlink</a></h1> <h2> {% block titlesection %}{% endblock %} </h2></header>
+
+    <div id="navegador">
+      <nav>
+        <div><a class="navegacion" href="temas.html">Noticias AECO</a></div>
+        <div><a class="navegacion" href="registro.html">Registro</a></div>
+
+        <div class="Menu">
+             <details>
+             <summary>Más</summary>
+             <blockquote><a href="acercade.html">Acerca de</a></blockquote>
+             <blockquote><a href="centroayuda.html">Centro de ayuda</a></blockquote>
+             <blockquote><a href="privacidad.html">Privacidad y Términos</a></blockquote>
+             <blockquote><a href="publicidad.html">Publicidad</a></blockquote>
+             <blockquote><a href="servicios.html">Servicios empresariales</a></blockquote>
+             </details>
+        </div>
+
+        <div class="clearfloat"></div>
+    </nav></div>
   <main>
 
 
   </main>
-
  </body>
 </html>
