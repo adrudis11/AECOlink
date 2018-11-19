@@ -144,7 +144,8 @@ ul.dropdown-content{
     padding: 15px 0px 10px 20px;
     text-align: left;
     max-height: 0px;
-    transition: all 0.25s ease;
+    opacity: 0.5;
+    transition: all 0.25s ease-out;
 }
 
 .dropdown-content li{
@@ -159,8 +160,9 @@ ul.dropdown-content{
 
 .dropdown:hover .dropdown-content {
     visibility: visible;
+    opacity: 1;
     max-height: 250px;
-    transition: max-height 0.25s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 /* ------------------------------------------------------------------------
