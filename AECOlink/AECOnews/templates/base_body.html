@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="icon" href="../Imagenes/Icono.png" type="image/png" sizes="160x160">
+    <link rel="icon" href='{% static "Imagenes/Icono.png" %}' type="image/png" sizes="160x160">
     <title>AECOlink</title>
 
     <!-- Metadades (Pendent entendre que fan) -->
@@ -12,14 +12,15 @@
 
     <!-- Crida a fulles d'estil -->
     {% block archivos_css %}{% endblock %}
-     <link rel="stylesheet" href="{% static /css/generales.css %}">
+    {% load static %}
+     <link rel="stylesheet" href='{% static "css/generales.css" %}'>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet"> <!-- Fuentes google fonts -->
   </head>
 
   <body>
-    <header><h1 id="tituloprincipal"><a id="navegacion" href="index.html">AECOlink</a></h1> <h2> {% block titlesection %}{% endblock %} </h2></header>
+    <header><h1 id="tituloprincipal"><a id="navegacion" href="">AECOlink</a></h1> <h2> {% block titlesection %}{% endblock %} </h2></header>
 
     <div id="navegador">
       <nav>

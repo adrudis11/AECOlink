@@ -23,7 +23,7 @@ section#menuNoticias > div {
     }
 
 #Arquitectura {
-    background-image: url(/Imagenes/iconarquitect.png);
+    /*background-image: url(/Imagenes/iconarquitect.png);*/
     background-size: 150%;
     }
 
@@ -40,7 +40,7 @@ section#menuNoticias > div {
         }
 
 #Estructuras {
-    background-image: url(/Imagenes/iconestruct.png);
+    /*background-image: url(/Imagenes/iconestruct.png);*/
     background-size: 150%;
     }
 
@@ -57,7 +57,7 @@ section#menuNoticias > div {
         }
 
 #MEP {
-    background-image: url(/Imagenes/iconmep.jpg);
+    /*background-image: url(/Imagenes/iconmep.jpg);*/
     background-size: 150%;
     }
 
@@ -74,7 +74,7 @@ section#menuNoticias > div {
         }
 
 #Construccion {
-    background-image: url(/Imagenes/iconcons.jpg);
+    /*background-image: url(/Imagenes/iconcons.jpg);*/
     background-size: 150%;
     }
 
@@ -91,7 +91,7 @@ section#menuNoticias > div {
         }
 
 #OM {
-    background-image: url(/Imagenes/iconom.jpg);
+    /*background-image: url(/Imagenes/iconom.jpg);*/
     background-size: 150%;
     }
 
@@ -165,11 +165,11 @@ div.publicidad {
     }
 
 #anuncio1 {
-    background-image: url(/Imagenes/publizigurat.jpg);
+    /*background-image: url(/Imagenes/publizigurat.jpg);*/
     background-size: 100%;
     }
 
 #anuncio2 {
-    background-image: url(/Imagenes/publivitral.jpg);
+    /*background-image: url(/Imagenes/publivitral.jpg);*/
     background-size: 85%;
     }
