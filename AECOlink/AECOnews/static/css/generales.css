@@ -19,7 +19,7 @@ main {
     }
 
 nav {
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 100;
     top: 0;
@@ -38,7 +38,7 @@ header#encabezado {
     
     /*background-image: url(/Imagenes/header.jpg);*/
     background-size: 12%;
-    }
+}
 
     header h1 > a {
         width: auto;
@@ -60,7 +60,7 @@ header#encabezado {
 
 .navegacion, .navegacion a {
     color: white;
-    }
+}
 
 nav {
     display: flex;
@@ -69,32 +69,32 @@ nav {
     
     background-color: #727272;
     padding: 0.5%;
-    }
+}
 
     div#cajanav1 {
         flex: 1;
         max-width: 200px;
 
         display: flex;
-        }
+    }
 
         div#cajanav1 > a {
             flex: auto;
 
             text-align: center;
             border-right: solid 1px;
-            }
+        }
 
         div#cajanav1 > a:hover {
                 color: black;
                 background-color: white;
-                }
+        }
 
     div#cajanav2 {
         text-align: center;
 
         flex: 1;
-        }
+    }
 
         div#cajanav2 > input {
             height: 30px;
@@ -105,7 +105,7 @@ nav {
             border: 0px;
             
             font-size: 15px;
-            }
+        }
 
     div#cajanav3 {
         text-align: center;
@@ -113,7 +113,22 @@ nav {
         justify-content: flex-end;
         max-width: 100px;
         flex: 1;
-        }
+    }
+
+/* ------------------------------------------------------------------------
+    Sticky nav
+ */
+#navbar {
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
 
 
 /* -----------------------------------------------------------------------*/
