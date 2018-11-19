@@ -15,14 +15,17 @@ body {
     }
 
 main {
-    display: flex;
+
     }
 
 nav {
-    position: relative;
     width: 100%;
-    z-index: 100;
     top: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 /* -----------------------------------------------------------------------*/
@@ -63,14 +66,19 @@ header#encabezado {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    float: left;
+    height: 21px;
     
     background-color: #727272;
     padding: 0.5%;
 }
 
+nav li + li:before{
+    content: "|";
+    float: left;
+}
+
+/*
     div#cajanav1 {
         flex: 1;
         max-width: 200px;
@@ -114,12 +122,52 @@ nav {
         max-width: 100px;
         flex: 1;
     }
+*/
+.nav-li{
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+
+.nav-ul{
+    overflow: auto;
+}
+
+ul.dropdown-content{
+    visibility: hidden;
+    float: left;
+    background-color: #727272;
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-left: 10px;
+    padding: 15px 0px 10px 20px;
+    text-align: left;
+    max-height: 0px;
+    transition: all 0.25s ease;
+}
+
+.dropdown-content li{
+    margin-bottom: 5px;
+}
+
+
+.dropdown-content li + li:before{
+    content: "";
+}
+
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    max-height: 250px;
+    transition: max-height 0.25s ease-in;
+}
 
 /* ------------------------------------------------------------------------
     Sticky nav
  */
 #navbar {
-  overflow: hidden;
+
 }
 .sticky {
   position: fixed;
@@ -142,4 +190,4 @@ nav {
     
     border: 1px solid gray;
     border-radius: 5px;
-    }
+}
