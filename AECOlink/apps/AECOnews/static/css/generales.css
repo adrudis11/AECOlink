@@ -193,3 +193,19 @@ ul.dropdown-content{
     border: 1px solid gray;
     border-radius: 5px;
 }
+
+#main-left{
+    width: 24.5vw;
+    height: 100vw;
+    float: left;
+}
+#main-center{
+    width: 50vw;
+    height: 100vw;
+    float: left;
+}
+#main-right{
+    width: 24.4vw;
+    height: 100vw;
+    float: left;
+}

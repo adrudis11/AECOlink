@@ -11,3 +11,15 @@
 {% block archivos_css %}
 
 {% endblock %}
+
+{% block main %}
+    <div id="main-left"></div>
+    <div id="main-center">
+        <div class="post-box">
+            <div class="post-title">{{ post.title }}</div>
+            <div class="post-image">{{ post.body }}</div>
+            <div class="post-text"></div>
+        </div>
+    </div>
+    <div id="main-right"></div>
+{% endblock %}
