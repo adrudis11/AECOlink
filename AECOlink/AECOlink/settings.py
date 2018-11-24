@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.AECOnews',
+    'apps.profiles'
 ]
 
 MIDDLEWARE = [
@@ -141,4 +142,5 @@ STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static', 'static_onli')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     'AECOnews/static',
+    'profiles/static',
     ]
