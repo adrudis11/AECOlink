@@ -1,0 +1,195 @@
+/* -----------------------------------------------------------------------*/
+/* Formatos generales */
+
+
+* {
+    margin: 0%;
+    
+    font-family: calibri;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    }
+
+body {
+    background-color: #e5e5e5
+    }
+
+main {
+
+    }
+
+nav {
+    width: 100%;
+    top: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/* -----------------------------------------------------------------------*/
+/* Formato encabezado */
+
+header#encabezado {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    
+    padding: 2%;  
+    height: 50px;
+    
+    /*background-image: url(/Imagenes/header.jpg);*/
+    background-size: 12%;
+}
+
+    header h1 > a {
+        width: auto;
+
+        font-size: 220%;
+        color: white;
+        }
+
+    header h2 {
+        flex: 1;
+
+        font-size: 200%;
+        color: white;
+        }
+
+
+/* -----------------------------------------------------------------------*/
+/* Formato navegador */
+
+.navegacion, .navegacion a {
+    color: white;
+}
+
+nav {
+    float: left;
+    height: 21px;
+    
+    background-color: #727272;
+    padding: 0.5%;
+}
+
+nav li + li:before{
+    content: "|";
+    float: left;
+}
+
+/*
+    div#cajanav1 {
+        flex: 1;
+        max-width: 200px;
+
+        display: flex;
+    }
+
+        div#cajanav1 > a {
+            flex: auto;
+
+            text-align: center;
+            border-right: solid 1px;
+        }
+
+        div#cajanav1 > a:hover {
+                color: black;
+                background-color: white;
+        }
+
+    div#cajanav2 {
+        text-align: center;
+
+        flex: 1;
+    }
+
+        div#cajanav2 > input {
+            height: 30px;
+            width: 500px;
+            padding-left: 1%;
+            padding-right: 1%;
+            border-radius: 10px;
+            border: 0px;
+            
+            font-size: 15px;
+        }
+
+    div#cajanav3 {
+        text-align: center;
+
+        justify-content: flex-end;
+        max-width: 100px;
+        flex: 1;
+    }
+*/
+.nav-li{
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+
+.nav-ul{
+    overflow: auto;
+}
+
+ul.dropdown-content{
+    visibility: hidden;
+    float: left;
+    background-color: #727272;
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-left: 10px;
+    padding: 15px 0px 10px 20px;
+    text-align: left;
+    max-height: 0px;
+    opacity: 0.5;
+    transition: all 0.25s ease-out;
+}
+
+.dropdown-content li{
+    margin-bottom: 5px;
+}
+
+
+.dropdown-content li + li:before{
+    content: "";
+}
+
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    max-height: 250px;
+    transition: all 0.25s ease-in;
+}
+
+/* ------------------------------------------------------------------------
+    Sticky nav
+ */
+#navbar {
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+/* -----------------------------------------------------------------------*/
+/* Cuerpo */
+
+.flotante {
+    margin: 3%;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: rgb(150,150,150) 3px 3px 1px;
+    
+    border: 1px solid gray;
+    border-radius: 5px;
+}

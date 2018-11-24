@@ -1,0 +1,23 @@
+/* Pestaña registro */
+
+.registro {
+    padding-right: 0%;
+    padding-left: 2%;
+    float: right;
+}
+
+.registro p {
+    margin-top: 3%;
+    
+}
+
+.registro input {
+    width: 200px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.registro p#disciplina {
+    padding: 0%;
+    width: 0%;
+}

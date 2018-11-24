@@ -1,11 +1,5 @@
 from django.db import models
 
-class User(models.Model):
-    name = models.CharField(max_length=50)
-
-class Client(User):
-    asdf = models.CharField(max_length=50)
-
 class Post(models.Model):
     title = models.CharField(max_length=150)
     body = models.TextField()
