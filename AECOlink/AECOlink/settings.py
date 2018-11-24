@@ -77,8 +77,7 @@ WSGI_APPLICATION = 'AECOlink.wsgi.application'
 
 DATABASES = {
 
-    'default': {},
-    'drudis': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'AECO_db',
         'USER': 'postgres',
@@ -86,15 +85,6 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     },
-
-    'carles': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'AECO_db',
-        'USER': 'postgres',
-        'PASSWORD': 'Mecatroniccarles',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
 }
 
 
